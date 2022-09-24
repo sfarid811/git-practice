@@ -1,7 +1,33 @@
-# Créer une branche : git checkout b <name_branch>
-# faire un rebase interactif(depuis current branch feature) : git rebase -i HEAD~n° 
-# forcer le push : git push -f (current feature branch)
-# merger current feature branch avec la dev ==> entrer dans master et puis : git merge feature name 
-# git push -f 
-# supprimer la branche en local : git branch -d feature
-# supprimer la branche en remote : git push origin --delete -d feature
+
+## Git cheat sheet
+
+Créer une branche
+
+```bash
+ git checkout b <name_branch>
+```
+Faire un rebase interactif(depuis current branch feature) 
+
+```bash
+git rebase -i HEAD~n° 
+  
+Forcer le push
+
+```bash
+ git push -f (current feature branch)
+ 
+Merger current feature branch avec la dev 
+
+```bash
+ entrer dans master et puis : git merge feature name ensui git push -f 
+  
+Supprimer une branche en local
+
+```bash
+ git branch -d feature 
+ 
+  
+Supprimer une branche en remote
+
+```bash
+git push origin --delete -d feature 
